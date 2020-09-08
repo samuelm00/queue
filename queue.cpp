@@ -78,19 +78,3 @@ size_t queue<T>::size() const { return sz; }
 
 template <typename T>
 void swap(queue<T>& l, queue<T>& r) { l.swap(r); }
-
-
-int main() {
-
-	queue<int> q;
-	for (int i{ 0 }; i < 10; ++i) {
-		q.push(i);
-		std::cout << q.size() << std::endl;
-	}
-	for (int i{ 0 }; i < 10; ++i) {
-		std::cout << "front: " << q.front() << std::endl;
-		q.pop();
-	}
-
-	return 0;
-}
